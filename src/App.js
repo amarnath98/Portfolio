@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Header from './components/header/header';
+import SocialLinks from './components/sociallinks/sociallinks';
+import "./App.css"
+import Skills from './components/skills/skills';
+import WorkExperience from './components/workexperience/workexperience';
+import Contact from './components/contact/contact';
+import Home from './components/home/home';
+import PopUp from './components/popup/popup';
+import Footer from './components/footer/footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    
+    const [popupData, setPopupData] = useState(null);
+
+    const handleReadMore = (data) => {
+      setPopupData(data);
+    };
+  
+    const handleClosePopup = () => {
+      setPopupData(null);
+    };
+ return (
+  <>
+  <Header /> 
+ <div className='container'>
+  <Home />
+  {/* <SocialLinks /> */}
+  <Skills />
+  <WorkExperience onReadMore={handleReadMore} />
+  <PopUp isOpen={popupData !== null} onClose={handleClosePopup} data={popupData} />
+  <Contact />
+  <Footer />
+
+ </div>
+ </>
+ )
 }
 
-export default App;
+export default App
