@@ -33,7 +33,7 @@ const Contact = () => {
                 <div className='details'>
                   <h1>Amarnath Pamidi</h1>
                   <p>Software Engineer</p>
-                  <p>I am available for work. To connect with me via email Please fill the form.</p> <br />
+                  <p>I am available for work. To connect with me via email please fill the form.</p> <br />
                   {/* <p>Phone: +01234567890</p>
                   <p>Email: admin@example.com</p> <br /> */}
                   <span>FIND ME</span>
