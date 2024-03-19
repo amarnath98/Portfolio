@@ -53,10 +53,11 @@
     height: 20px;
   }
   .hero .left {
-    margin-right: 10%;
+    margin-right: 5%;
+    width: 57%;
   }
   .hero .right {
-    width: 40%;
+    width: 33%;
     position: relative;
   }
   .hero .right_img {

@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { useForm, useFormContext, FormProvider } from "react-hook-form";
+import React from "react"
+import { useForm, FormProvider } from "react-hook-form";
 import "./contact.css"
 
 const Contact = () => {
@@ -28,7 +28,7 @@ const Contact = () => {
             <div className='left'>
               <div className='box box_shodow'>
                 <div className='img'>
-                  <img src="/assets/images/contact.png" alt='Contact img' />
+                  <img src="./assets/images/contact.png" alt='Contact img' />
                 </div>
                 <div className='details'>
                   <h1>Amarnath Pamidi</h1>
