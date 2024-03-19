@@ -12,6 +12,7 @@ const PopUp = ({ isOpen, onClose, data }) => {
           </span>
           <div className="popup-card">
             <h6>{data.title}</h6>
+            <h4>{data.company}</h4>
             <div className="popup-work-duration">{data.date}</div>
             <ul>
               {data.responsibilities.map((item, index) => (

@@ -10,6 +10,7 @@ const WorkExperienceCard = ({ data, onReadMore }) => {
   return (
     <div className="experience-card">
       <h6>{data.title}</h6>
+      <h4>{data.company}</h4>
       <div className="work-duration">{data.date}</div>
       <ul>
         {data.responsibilities.slice(0, 3).map((item, index) => (

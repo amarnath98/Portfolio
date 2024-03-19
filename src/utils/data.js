@@ -1,17 +1,17 @@
 export const skillsData = [
     {
         title: "Frontend",
-        icon: "/assets/images/frontend-icon.png",
+        icon: "./assets/images/frontend-icon.png",
         skills: [
-            {skill: "HTML5 & CSS", src: "/assets/images/skills/html.png", title: 'HTML',style: 'shadow-green-400',link: '', percentage: "90%"},
-            {skill: "JavaScript / TypeScript",src: "/assets/images/skills/javascript.png", title: 'jaascript',style: 'shadow-green-400', percentage: "76%"},
-            {skill: "Angular",src: "/assets/images/skills/javascript.png", title: 'angular',style: 'shadow-green-400', percentage: "80%"},
-            {skill: "ReactJS",src: "/assets/images/skills/react.png", title: 'react',style: 'shadow-green-400', percentage: "64%"}
+            {skill: "HTML5 & CSS", src: "./assets/images/skills/html.png", title: 'HTML',style: 'shadow-green-400',link: '', percentage: "90%"},
+            {skill: "JavaScript / TypeScript",src: "./assets/images/skills/javascript.png", title: 'jaascript',style: 'shadow-green-400', percentage: "76%"},
+            {skill: "Angular",src: "./assets/images/skills/javascript.png", title: 'angular',style: 'shadow-green-400', percentage: "80%"},
+            {skill: "ReactJS",src: "./assets/images/skills/react.png", title: 'react',style: 'shadow-green-400', percentage: "64%"}
         ],
     },
     {
         title: "Backend",
-        icon: "/assets/images/backend-logo.png",
+        icon: "./assets/images/backend-icon.png",
         skills: [
             {skill: "ASP.Net", percentage: "80%"},
             {skill: ".Net Core", percentage: "92%"},
@@ -21,7 +21,7 @@ export const skillsData = [
     },
     {
         title: "Tools",
-        icon: "/assets/images/tools-icon.png",
+        icon: "./assets/images/tools-icon.png",
         skills: [
             {skill: "Git & GitHub", percentage: "90%"},
             {skill: "Visual Studio", percentage: "92%"},
@@ -33,7 +33,7 @@ export const skillsData = [
 
     {
         title: "Soft Skills",
-        icon: "/assets/images/softskills-icon.png",
+        icon: "./assets/images/softskills-icon.png",
         skills: [
             {skill: "Problem Solving", percentage: "80%"},
             {skill: "Attention to Detail", percentage: "92%"},

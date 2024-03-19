@@ -11,8 +11,14 @@
 .experience-card h6 {
 font-size: 1.05rem;
 font-weight: 500;
-margin-bottom: 0.7rem;
+margin-bottom: 0.2rem;
 }
+
+.experience-card h4 {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-bottom: 0.7rem;
+    }
 
 .work-duration {
     display: inline-block;
@@ -58,6 +64,10 @@ margin-bottom: 0.7rem;
 
     .experience-card h6 {
         font-size: 0.95rem;
+    }
+
+    .experience-card h4 {
+        font-size: 0.65rem;
     }
     
     .experience-card ul li {

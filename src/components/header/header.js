@@ -14,7 +14,7 @@ const Header = () => {
       <header className='header'>
         <div className='container d_flex'>
           <div className='logo'>
-            {/* <img className='setimage' src={"/assets/images/mylogo.svg"} alt='Porolio Logo' /> */}
+            {/* <img className='setimage' src={"./assets/images/mylogo.svg"} alt='Porolio Logo' /> */}
           </div>
           {/* <div className='h-20 px-4'>
         <div>
@@ -38,7 +38,7 @@ const Header = () => {
                 <a href='#experience'>experience</a>
               </li>
               <li>
-                <a href='/assets/files/AmarnathPamidi_Resume.pdf' download={true} 
+                <a href='./assets/files/AmarnathPamidi_Resume.pdf' download={true} 
                     target='_blank'
                     rel='noreferrer'>resume</a>
               </li>

@@ -37,7 +37,7 @@ const Home = () => {
                       <i className='fab fa-github'></i>
                   </button>
                   </a>
-                  <a href="/assets/files/AmarnathPamidi_Resume.pdf" target="_blank" aria-label="Resume" download={true} rel="noopener noreferrer">
+                  <a href="./assets/files/AmarnathPamidi_Resume.pdf" target="_blank" aria-label="Resume" download={true} rel="noopener noreferrer">
                   <button className='btn_shadow' aria-label="Resume">
                   <BsFillPersonLinesFill size={15}/> Resume
                       {/* <i className='fab fa-github'></i> */}
@@ -45,23 +45,11 @@ const Home = () => {
                   </a>
                 </div>
               </div>
-              {/* <div className='col_1'>
-                <h4>BEST SKILL ON</h4>
-                <button className='btn_shadow'>
-                  <img src={skill1} alt='' />
-                </button>
-                <button className='btn_shadow'>
-                  <img src={skill2} alt='' />
-                </button>
-                <button className='btn_shadow'>
-                  <img src={skill3} alt='' />
-                </button>
-              </div> */}
             </div>
           </div>
           <div className='right'>
             <div className='right_img'>
-              <img src='' alt='Main pic' />
+              <img src="./assets/gifs/dribble_loading.gif" alt='Main pic' />
             </div>
           </div>
         </div>
