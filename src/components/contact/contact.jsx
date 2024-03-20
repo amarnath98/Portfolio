@@ -1,17 +1,48 @@
-import React from "react"
+import React, { useState } from "react"
 import { useForm, FormProvider } from "react-hook-form";
 import "./contact.css"
 
 const Contact = () => {
 
   const methods = useForm();
-  const { register, formState } = methods;
-  const { errors } = formState;
+  const { register, handleSubmit, formState: { errors }} = methods;
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+  // const { errors } = formState;
 
-  const onSubmit = methods.handleSubmit(data => {
-    methods.reset();
-    // setSuccess(true); // Uncomment if you need to set success state
-  });
+  const onSubmit = async (data) => {
+      try {
+        // Construct the request body
+        const requestBody = {
+          fullname: data.fullname,
+          phone: data.phone,
+          email: data.email,
+          subject: data.subject || '', // Optional field
+          message: data.message,
+        };
+    
+        // Send the POST request to Formspree
+        const response = await fetch('https://formspree.io/f/xdoqzvle', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(requestBody),
+        });
+    
+        // Check if the request was successful (status code 200-299)
+        if (response.ok) {
+          // Reset the form if the submission was successful
+          setSubmissionStatus('success');
+          methods.reset(); // Reset the form
+        } else {
+          setSubmissionStatus('error');  
+      } }
+      catch (error) {
+        console.error('An unexpected error occurred:', error);
+        setSubmissionStatus('error');
+      }
+    };
+
 
   const isInvalid = Object.keys(errors).length > 0;
 
@@ -55,10 +86,7 @@ const Contact = () => {
 
             <div className='right box_shodow'>
               <FormProvider {...methods}>
-                <form action="https://formspree.io/f/xdoqzvle" method="POST" onSubmit={onSubmit}
-                  noValidate
-                  autoComplete="off"
-                >
+                <form onSubmit={handleSubmit(onSubmit)} noValidate autoComplete="off">
                   <div className="f_flex">
                     <div className={`input row ${errors.fullname ? 'error' : ''}`}>
                       <span>YOUR NAME</span>
@@ -146,6 +174,34 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
+        {/* {submissionStatus && (
+        <div className={`popup-overlay ${submissionStatus === 'success' ? 'success' : 'error'}`}>
+          <div className="popup-content">
+            <span className="close-button" onClick={() => setSubmissionStatus(null)}>
+              &times;
+            </span>
+            {submissionStatus === 'success' ? (
+              <p>Your message has been sent successfully!</p>
+            ) : (
+              <p>An error occurred while sending your message. Please try again later.</p>
+            )}
+          </div>
+        </div>
+      )} */}
+
+{submissionStatus && (
+        <div className={`submission-popup ${submissionStatus}`}>
+          <div className="popup-content">
+            <span className="close-button" onClick={() => setSubmissionStatus(null)}>
+              &times;
+            </span>
+            <p>{submissionStatus === 'success' ? "Thank you for reaching out. I'll get back to you as soon as possible." : 'An error occurred while sending your message. Please try again later.'}</p>
+            <button className="btn_shadow" onClick={() => setSubmissionStatus(null)}>OK</button>
+          </div>
+        </div>
+      )}
+
       </section>
     </>
   )
