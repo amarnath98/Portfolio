@@ -192,7 +192,7 @@ const Contact = () => {
 
 {submissionStatus && (
         <div className={`submission-popup ${submissionStatus}`}>
-          <div className="popup-content">
+          <div className="popup-content-wrapper">
             <span className="close-button" onClick={() => setSubmissionStatus(null)}>
               &times;
             </span>
@@ -201,7 +201,7 @@ const Contact = () => {
           </div>
         </div>
       )}
-
+      
       </section>
     </>
   )

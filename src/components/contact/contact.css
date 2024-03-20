@@ -96,27 +96,12 @@
     align-items: center;
   }
   
-  .popup-content {
+  .popup-content-wrapper {
     text-align: center;
   }
   
-  .popup-content p {
+  .popup-content-wrapper p {
     margin-bottom: 17px;
   }
-  
-  .popup-content .ok-button {
-    padding: 10px 20px;
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
-    color: #ff014f;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .popup-content .ok-button:hover {
-    background-color: #ff014f;
-    color: white;
-    /* transform: translateY(-10px); */
-  }
+
   
