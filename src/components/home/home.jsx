@@ -26,7 +26,7 @@ const Home = () => {
             <div className='hero_btn d_flex'>
               <div className='col_1'>
                 <h4>FIND ME</h4>
-                <div className='button'>
+                <div className='home-buttons'>
                 <a href="https://www.linkedin.com/in/amarnath-pamidi/" target="_blank" rel="noopener noreferrer">
                   <button className='btn_shadow'>
                       <i className='fab fa-linkedin-in'></i>

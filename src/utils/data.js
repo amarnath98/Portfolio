@@ -6,7 +6,7 @@ export const skillsData = [
             {skill: "HTML5 & CSS", src: "./assets/images/skills/html.png", title: 'HTML',style: 'shadow-green-400',link: '', percentage: "90%"},
             {skill: "JavaScript / TypeScript",src: "./assets/images/skills/javascript.png", title: 'jaascript',style: 'shadow-green-400', percentage: "76%"},
             {skill: "Angular",src: "./assets/images/skills/javascript.png", title: 'angular',style: 'shadow-green-400', percentage: "80%"},
-            {skill: "ReactJS",src: "./assets/images/skills/react.png", title: 'react',style: 'shadow-green-400', percentage: "64%"}
+            {skill: "ReactJS",src: "./assets/images/skills/react.png", title: 'react',style: 'shadow-green-400', percentage: "75%"}
         ],
     },
     {
@@ -23,9 +23,9 @@ export const skillsData = [
         title: "Tools",
         icon: "./assets/images/tools-icon.png",
         skills: [
-            {skill: "Git & GitHub", percentage: "90%"},
-            {skill: "Visual Studio", percentage: "92%"},
-            {skill: "IIS", percentage: "76%"},
+            {skill: "Git & GitHub", percentage: "95%"},
+            {skill: "Visual Studio", percentage: "80%"},
+            {skill: "IIS", percentage: "70%"},
             {skill: "Microsoft Azure", percentage: "75%"},
             {skill: "Swagger", percentage: "90%"}
         ],
@@ -35,9 +35,9 @@ export const skillsData = [
         title: "Soft Skills",
         icon: "./assets/images/softskills-icon.png",
         skills: [
-            {skill: "Problem Solving", percentage: "80%"},
-            {skill: "Attention to Detail", percentage: "92%"},
-            {skill: "Collaboration", percentage: "76%"},
+            {skill: "Problem Solving", percentage: "85%"},
+            {skill: "Attention to Detail", percentage: "90%"},
+            {skill: "Collaboration", percentage: "85%"},
             // {skill: "Postman", percentage: "64%"}
         ],
     } 
